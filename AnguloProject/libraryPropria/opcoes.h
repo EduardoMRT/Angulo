@@ -52,6 +52,12 @@
             return calculaCosseno(rad);
         }else if(opc == 2) {
             return calculaTangente(rad);
+        }else if (opc == 3) {
+            return 1/calculaCosseno(rad);
+        }else if(opc == 4){
+            return 1/calculaSeno(rad);
+        }else if(opc == 5) {
+            return 1/calculaTangente(rad);
         }
     }
 
