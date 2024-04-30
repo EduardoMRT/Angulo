@@ -10,6 +10,7 @@
 #include <stdlib.h>
 
 #include "calculos/retornaSeno.h"
+#include "calculos/retornaCosseno.h"
 #include "calculos/calculaRadiano.h"
 
 #define NUM_OPCOES 6
@@ -44,8 +45,9 @@
     double opcEscolhida(int opc, double angulo) {
         double rad = calculaRadiano(angulo);
         if(opc == 0) {
-            double seno = calculaSeno(rad);
-            return rad;
+            return calculaSeno(rad);
+        }else if(opc == 1) {
+            return calculaCosseno(rad);
         }
     }
 
