@@ -12,8 +12,11 @@ int main(void) {
     listaOpcoes();
 
     int opc;
+    double angulo;
     scanf("%d",&opc);
-    opcEscolhida(opc);
+    printf("Digite o valor do angulo: \n");
+    scanf("%lf",&angulo);
+    opcEscolhida(opc, angulo);
 
     return 0;
 }

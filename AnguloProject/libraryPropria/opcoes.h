@@ -4,9 +4,13 @@
 
 #ifndef OPCOES_H
 #define OPCOES_H
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+
+#include "libraryPropria/calculos/seno.h"
+#include "libraryPropria/calculos/calculaRadiano.h"
 
 #define NUM_OPCOES 6
 
@@ -37,9 +41,12 @@
         free(opcStr);  // Libera a memória alocada para o array
     }
 
-    void opcEscolhida(int opc) {
-        if(opc == 1) {
-            run seno.h;
+    void opcEscolhida(int opc, double angulo) {
+        double rad = calculaRadiano(angulo);
+        if(opc == 0) {
+            calculaSeno(rad);
         }
     }
+
+
 #endif //OPCOES_H
