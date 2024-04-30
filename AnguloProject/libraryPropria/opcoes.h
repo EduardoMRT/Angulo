@@ -11,7 +11,9 @@
 
 #include "calculos/retornaSeno.h"
 #include "calculos/retornaCosseno.h"
+#include "calculos/retornaTangente.h"
 #include "calculos/calculaRadiano.h"
+#include "calculos/retornaTangente.h"
 
 #define NUM_OPCOES 6
 
@@ -48,6 +50,8 @@
             return calculaSeno(rad);
         }else if(opc == 1) {
             return calculaCosseno(rad);
+        }else if(opc == 2) {
+            return calculaTangente(rad);
         }
     }
 
