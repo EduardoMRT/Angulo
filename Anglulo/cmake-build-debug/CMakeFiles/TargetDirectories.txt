@@ -1,0 +1,3 @@
+C:/Users/eteixeira/CLionProjects/Anglulo/cmake-build-debug/CMakeFiles/Anglulo.dir
+C:/Users/eteixeira/CLionProjects/Anglulo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/eteixeira/CLionProjects/Anglulo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
