@@ -4,7 +4,11 @@
 
 #ifndef SENO_H
 #define SENO_H
-double calculaSeno(double seno){
 
+#include <math.h>
+
+double calculaSeno(double rad){
+    double seno = sin(rad);
+    return seno;
 }
 #endif //SENO_H

@@ -15,8 +15,9 @@ int main(void) {
     double angulo;
     scanf("%d",&opc);
     printf("Digite o valor do angulo: \n");
+
     scanf("%lf",&angulo);
-    opcEscolhida(opc, angulo);
+    printf("%.4lf", opcEscolhida(opc, angulo));
 
     return 0;
 }

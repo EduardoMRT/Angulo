@@ -9,8 +9,8 @@
 #include <string.h>
 #include <stdlib.h>
 
-#include "libraryPropria/calculos/seno.h"
-#include "libraryPropria/calculos/calculaRadiano.h"
+#include "calculos/retornaSeno.h"
+#include "calculos/calculaRadiano.h"
 
 #define NUM_OPCOES 6
 
@@ -36,15 +36,16 @@
         char** opcStr = opcoes();
         for(int i = 0; i < NUM_OPCOES; i++) {
             printf("\n (%i) %s", i, opcStr[i]);
-            free(opcStr[i]);  // Libera a memória alocada para cada string
+            free(opcStr[i]);
         }
-        free(opcStr);  // Libera a memória alocada para o array
+        free(opcStr);
     }
 
-    void opcEscolhida(int opc, double angulo) {
+    double opcEscolhida(int opc, double angulo) {
         double rad = calculaRadiano(angulo);
         if(opc == 0) {
-            calculaSeno(rad);
+            double seno = calculaSeno(rad);
+            return rad;
         }
     }
 
