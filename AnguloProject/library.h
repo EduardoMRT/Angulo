@@ -1,6 +1,0 @@
-#ifndef ANGULOPROJECT_LIBRARY_H
-#define ANGULOPROJECT_LIBRARY_H
-
-void hello(void);
-
-#endif //ANGULOPROJECT_LIBRARY_H
