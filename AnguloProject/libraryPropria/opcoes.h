@@ -15,7 +15,7 @@
 #include "calculos/calculaRadiano.h"
 #include "calculos/retornaTangente.h"
 
-#define NUM_OPCOES 6
+#define NUM_OPCOES 7
 
 
     char** opcoes(void) {
@@ -31,6 +31,7 @@
         opc[3] = strdup("Secante");
         opc[4] = strdup("Cossecante");
         opc[5] = strdup("Cotangente");
+        opc[6] = strdup("Todos");
 
         return opc;
     }
@@ -58,6 +59,17 @@
             return 1/calculaSeno(rad);
         }else if(opc == 5) {
             return 1/calculaTangente(rad);
+        }else if(opc == 6) {
+            double i[6];
+            i[0] = calculaSeno(rad);
+            i[1] = calculaCosseno(rad);
+            i[2] = calculaTangente(rad);
+            i[3] = 1/calculaCosseno(rad);
+            i[4] = 1/calculaSeno(rad);
+            i[5] = 1/calculaTangente(rad);
+            for(int aux = 0; aux <= 5; aux++) {
+                return i[aux];
+            }
         }
     }
 
