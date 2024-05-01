@@ -41,13 +41,15 @@
     void listaOpcoes(void) {
         char** opcStr = opcoes();
         for(int i = 0; i < NUM_OPCOES; i++) {
-            printf("\n (%i) %s", i, opcStr[i]);
+            printf("\n (%i) %s", i+1, opcStr[i]);
             free(opcStr[i]);
         }
         free(opcStr);
     }
 
-    double opcEscolhida(int opc, double angulo) {
+    double* opcEscolhida(int opc, double angulo) {
+        opc--;
+        static double i[6];
         double rad = calculaRadiano(angulo);
         if(opc == 0) {
             return calculaSeno(rad);
@@ -62,17 +64,16 @@
         }else if(opc == 5) {
             return 1/calculaTangente(rad);
         }else if(opc == 6) {
-            double i[6];
             i[0] = calculaSeno(rad);
             i[1] = calculaCosseno(rad);
             i[2] = calculaTangente(rad);
             i[3] = 1/calculaCosseno(rad);
             i[4] = 1/calculaSeno(rad);
             i[5] = 1/calculaTangente(rad);
-            for(int aux = 0; aux <= 5; aux++) {
-                return i[aux];
-            }
+
+            return i;
         }
+        //TODO: Criar uma biblioteca para tratar a questão do opc == 6
     }
 
 

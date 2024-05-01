@@ -8,7 +8,9 @@
 #include "libraryPropria/eduardo.h"
 #include "libraryPropria/opcoes.h"
 
-int main(void) {
+
+
+void carregaAngulo(void) {
     textoEmLinha("Bem vindo(a) ao Sistema de Angulos");
     textoEmLinha("O que deseja realizar?");
     listaOpcoes();
@@ -19,23 +21,21 @@ int main(void) {
     printf("Digite o valor do angulo: \n");
     scanf("%lf",&angulo);
     printf("%.4lf", opcEscolhida(opc, angulo));
-
-    return 0;
 }
 
-void reloadAngulo(void){
+int main(void) {
     int opc;
-    printf("\n Deseja recomeçar o programa?\n (1) Sim \n (2) Não");
-    scanf_s("%d", &opc);
-    if(opc == 1){
-        main();
-    }else if(opc == 2){
-        printf("\n Obrigado(a) por utilizar o programa!");
-    }else{
-        printf("\n Opção inválida, por favor digite 1 ou 2");
-        reloadAngulo;
-    }
-    //TODO: Trocar ultimo printf para uma função que retorne em vermelho
+    do {
+        carregaAngulo();
+        printf("\n Deseja reiniciar o programa?\n (1) Sim \n (2) Nao \n");
+        scanf_s("%d", &opc);
+    }while(opc == 1);
+
+    textoEmLinha("\n Obrigado(a) por utilizar o programa!");
+    printf("\n Encerrando...");
+
 }
+    //TODO: Trocar ultimo printf para uma função que retorne em vermelho
+
 
 
