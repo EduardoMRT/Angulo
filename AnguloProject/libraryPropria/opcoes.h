@@ -60,23 +60,22 @@ char* buscaOpcoesTxt(int opc) {
 
 char* opcEscolhida(int opc, double angulo) {
         opc--;
-        double rad = calculaRadiano(angulo);
         char* retorno = (char*) calloc(256, sizeof(char)); // Aloca e inicializa a memória
         strcpy(retorno, buscaOpcoesTxt(opc));
         char numStr[50];
 
         if(opc == 0) {
-            sprintf(numStr, " = %.4lf\n", calculaSeno(rad));
+            sprintf(numStr, " = %.4lf\n", calculaSeno(angulo));
         } else if(opc == 1) {
-            sprintf(numStr, " = %.4lf\n", calculaCosseno(rad));
+            sprintf(numStr, " = %.4lf\n", calculaCosseno(angulo));
         } else if(opc == 2) {
-            sprintf(numStr, " = %.4lf\n", calculaTangente(rad));
+            sprintf(numStr, " = %.4lf\n", calculaTangente(angulo));
         } else if (opc == 3) {
-            sprintf(numStr, " = %.4lf\n", 1/calculaCosseno(rad));
+            sprintf(numStr, " = %.4lf\n", 1/calculaCosseno(angulo));
         } else if(opc == 4){
-            sprintf(numStr, " = %.4lf\n", 1/calculaSeno(rad));
+            sprintf(numStr, " = %.4lf\n", 1/calculaSeno(angulo));
         } else if(opc == 5) {
-            sprintf(numStr, " = %.4lf\n", 1/calculaTangente(rad));
+            sprintf(numStr, " = %.4lf\n", 1/calculaTangente(angulo));
         }
 
         strcat(retorno, numStr);
