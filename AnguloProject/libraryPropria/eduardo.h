@@ -7,10 +7,6 @@
 #include<string.h>
 #include<stdlib.h>
 
-    void geraLinha(void){
-    printf( "\n ---------------------------------- \n");
-    }
-
     void textoEmLinha(char* texto) {
         int tamanhoTexto = strlen(texto);
         char* traco = malloc(tamanhoTexto * 2 + 1);
@@ -21,4 +17,6 @@
         printf("\n %s \n %s \n %s \n", traco, texto, traco);
         free(traco);
     }
+
+
 #endif //EDUARDO_H

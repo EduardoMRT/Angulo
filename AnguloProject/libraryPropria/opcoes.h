@@ -24,14 +24,16 @@
             printf("Falha ao alocar memória.\n");
             return NULL;
         }
+        /*TODO: Realizar read.me = A função strdup é uma função da biblioteca padrão C que é usada para duplicar uma string. No entanto, ela foi descontinuada em alguns ambientes devido a possíveis riscos de segurança e não conformidade com os padrões ISO C e C++.
+        A função _strdup é uma alternativa que foi introduzida para ser mais segura e estar em conformidade com os padrões ISO C e C++. Ela funciona de maneira semelhante ao strdup, mas é considerada mais segura e portável. */
 
-        opc[0] = strdup("Seno");
-        opc[1] = strdup("Cosseno");
-        opc[2] = strdup("Tangente");
-        opc[3] = strdup("Secante");
-        opc[4] = strdup("Cossecante");
-        opc[5] = strdup("Cotangente");
-        opc[6] = strdup("Todos");
+        opc[0] = _strdup("Seno");
+        opc[1] = _strdup("Cosseno");
+        opc[2] = _strdup("Tangente");
+        opc[3] = _strdup("Secante");
+        opc[4] = _strdup("Cossecante");
+        opc[5] = _strdup("Cotangente");
+        opc[6] = _strdup("Todos\n");
 
         return opc;
     }
