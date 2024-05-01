@@ -10,10 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c76dca9c-cd62-4bf5-8a84-d1bedb0e7554" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/calculos/retornaTodos.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/calculos/seno.h" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/opcoes.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/opcoes.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnguloProject/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

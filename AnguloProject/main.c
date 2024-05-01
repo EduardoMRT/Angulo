@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include "libraryPropria/eduardo.h"
 #include "libraryPropria/opcoes.h"
+#include "libraryPropria/calculos/retornaTodos.h"
 
 
 
@@ -20,7 +21,12 @@ void carregaAngulo(void) {
     scanf("%d",&opc);
     printf("Digite o valor do angulo: \n");
     scanf("%lf",&angulo);
-    printf("%.4lf", opcEscolhida(opc, angulo));
+
+    if(opc == 7) {
+        retornaTudo(angulo);
+    }else {
+        opcEscolhida(opc, angulo);
+    }
 }
 
 int main(void) {
@@ -32,10 +38,11 @@ int main(void) {
     }while(opc == 1);
 
     textoEmLinha("\n Obrigado(a) por utilizar o programa!");
-    printf("\n Encerrando...");
-
+    printf("\nPressione ENTER para sair...");
+    getchar();
+    getchar();
+    return 0;
 }
-    //TODO: Trocar ultimo printf para uma função que retorne em vermelho
 
 
 
