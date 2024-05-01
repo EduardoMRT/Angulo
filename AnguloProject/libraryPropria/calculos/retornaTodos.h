@@ -7,15 +7,12 @@
 #include "../opcoes.h"
 
 void retornaTudo(double angulo){
-    char** opcStr = opcoes();
-    double resultado[NUM_OPCOES];
-
-    for(int i = 0; i < NUM_OPCOES-1; i++) {
-        resultado[i] = opcEscolhida(i, angulo);
-        printf("\n %s : %.4lf", opcStr[i], resultado[i]);
-        free(opcStr[i]);
-    }
-    free(opcStr);
+        printf( "%s", opcEscolhida(1, angulo));
+        printf( "%s", opcEscolhida(2, angulo));
+        printf( "%s", opcEscolhida(3, angulo));
+        printf( "%s", opcEscolhida(4, angulo));
+        printf( "%s", opcEscolhida(5, angulo));
+        printf( "%s", opcEscolhida(6, angulo));
 }
 
 #endif //RETORNATODOS_H

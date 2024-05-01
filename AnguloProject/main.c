@@ -24,8 +24,10 @@ void carregaAngulo(void) {
 
     if(opc == 7) {
         retornaTudo(angulo);
-    }else {
-        opcEscolhida(opc, angulo);
+    } else {
+        char* resultado = opcEscolhida(opc, angulo);
+        printf("%s", resultado);
+        free(resultado); // Libera a memória alocada
     }
 }
 
@@ -37,7 +39,7 @@ int main(void) {
         scanf_s("%d", &opc);
     }while(opc == 1);
 
-    textoEmLinha("\n Obrigado(a) por utilizar o programa!");
+    textoEmLinha("Obrigado(a) por utilizar o programa!");
     printf("\nPressione ENTER para sair...");
     getchar();
     getchar();

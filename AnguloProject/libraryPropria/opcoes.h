@@ -38,6 +38,17 @@
         return opc;
     }
 
+char* buscaOpcoesTxt(int opc) {
+        char** opcStr = opcoes();
+        char* resultado = strdup(opcStr[opc]);
+        for(int i = 0; i < NUM_OPCOES; i++) {
+            free(opcStr[i]);
+        }
+        free(opcStr);
+        return resultado;
+    }
+
+
     void listaOpcoes(void) {
         char** opcStr = opcoes();
         for(int i = 0; i < NUM_OPCOES; i++) {
@@ -47,24 +58,31 @@
         free(opcStr);
     }
 
-    double opcEscolhida(int opc, double angulo) {
+char* opcEscolhida(int opc, double angulo) {
         opc--;
         double rad = calculaRadiano(angulo);
+        char* retorno = (char*) calloc(256, sizeof(char)); // Aloca e inicializa a memória
+        strcpy(retorno, buscaOpcoesTxt(opc));
+        char numStr[50];
+
         if(opc == 0) {
-            return calculaSeno(rad);
-        }else if(opc == 1) {
-            return calculaCosseno(rad);
-        }else if(opc == 2) {
-            return calculaTangente(rad);
-        }else if (opc == 3) {
-            return 1/calculaCosseno(rad);
-        }else if(opc == 4){
-            return 1/calculaSeno(rad);
-        }else if(opc == 5) {
-            return 1/calculaTangente(rad);
+            sprintf(numStr, " = %.4lf\n", calculaSeno(rad));
+        } else if(opc == 1) {
+            sprintf(numStr, " = %.4lf\n", calculaCosseno(rad));
+        } else if(opc == 2) {
+            sprintf(numStr, " = %.4lf\n", calculaTangente(rad));
+        } else if (opc == 3) {
+            sprintf(numStr, " = %.4lf\n", 1/calculaCosseno(rad));
+        } else if(opc == 4){
+            sprintf(numStr, " = %.4lf\n", 1/calculaSeno(rad));
+        } else if(opc == 5) {
+            sprintf(numStr, " = %.4lf\n", 1/calculaTangente(rad));
         }
-        //TODO: Criar uma biblioteca para tratar a questão do opc == 6
+
+        strcat(retorno, numStr);
+        return retorno;
     }
+
 
 
 #endif //OPCOES_H
