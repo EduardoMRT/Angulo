@@ -10,6 +10,7 @@
 #include "libraryPropria/opcoes.h"
 #include "libraryPropria/calculos/retornaTodos.h"
 #include "libraryPropria/calculos/calculaRadiano.h"
+#include "libraryPropria/calculos/calculaAngulo.h"
 
 void carregaAngulo(void) {
     textoEmLinha("Bem vindo(a) ao Sistema de Angulos");
@@ -25,7 +26,9 @@ void carregaAngulo(void) {
 
     printf("\n O angulo esta em \n (1) Radianos \n (2) Graus \n");
     scanf("%d", &radOrGraus);
-    angulo = radOrGraus == 1 ? angulo : calculaRadiano(angulo);
+
+        angulo = radOrGraus == 1 ? angulo : calculaRadiano(angulo);
+
     system("cls"); //Só funciona no Windows
     if(opc == 10) {
         retornaTudo(angulo);
@@ -43,7 +46,7 @@ int main(void) {
         system("cls"); //Só funciona no Windows
     }while(opc == 1);
 
-    textoEmLinha("Obrigado(a) por utilizar o programa!");
+    textoEmLinha("Obrigado por utilizar o programa!");
     printf("\nPressione ENTER para sair...");
     getchar();
     getchar();

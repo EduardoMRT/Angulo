@@ -6,6 +6,8 @@
 #define EDUARDO_H
 #include<string.h>
 #include<stdlib.h>
+#include "calculos/calculaAngulo.h"
+#include "calculos/calculaRadiano.h"
 
 void textoEmLinha(char *texto) {
     int tamanhoTexto = strlen(texto);
@@ -21,9 +23,19 @@ void textoEmLinha(char *texto) {
 char* verificaTamanho(double angulo) {
     if (angulo < 1 || angulo > 1) {
         return ("ERRO: O valor deve estar entre 1 e -1");
+        exit(1);
     } else {
-        return "Validado";
+        return NULL;
     }
+}
+
+double ArcoSenoCossenoTangente(int radOrGraus, double angulo) {
+    if(radOrGraus == 1) {
+        angulo = retornaAngulo(angulo);
+    }
+    verificaTamanho(angulo);
+    //Angulo apto para calcular os Arcos
+    return angulo;
 }
 
 

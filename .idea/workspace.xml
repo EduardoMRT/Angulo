@@ -10,10 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c76dca9c-cd62-4bf5-8a84-d1bedb0e7554" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/calculos/calculaAngulo.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/calculos/retornaTodos.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/calculos/retornaTodos.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/eduardo.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/eduardo.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/opcoes.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/opcoes.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnguloProject/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
     </list>
@@ -67,6 +66,13 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="main.c - MinGW" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Angulo" TARGET_NAME="main.c - MinGW" CONFIG_NAME="main.c - MinGW">
+      <option name="sourceFile" value="C:\Users\Eduks\Documents\desenvolvimentos\Angulo\AnguloProject\main.c" />
+      <option name="toolchainName" value="MinGW" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -79,11 +85,33 @@
       <workItem from="1714479369618" duration="74000" />
       <workItem from="1714574009582" duration="1368000" />
       <workItem from="1714607656031" duration="200000" />
-      <workItem from="1715022300474" duration="1683000" />
+      <workItem from="1715022300474" duration="1992000" />
+      <workItem from="1715034207469" duration="2563000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/AnguloProject/libraryPropria/opcoes.h</url>
+          <line>70</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/AnguloProject/main.c</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/AnguloProject/main.c</url>
+          <line>22</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
