@@ -9,6 +9,7 @@
 #include "libraryPropria/eduardo.h"
 #include "libraryPropria/opcoes.h"
 #include "libraryPropria/calculos/retornaTodos.h"
+#include "libraryPropria/calculos/calculaRadiano.h"
 
 void carregaAngulo(void) {
     textoEmLinha("Bem vindo(a) ao Sistema de Angulos");
@@ -26,7 +27,7 @@ void carregaAngulo(void) {
     scanf("%d", &radOrGraus);
     angulo = radOrGraus == 1 ? angulo : calculaRadiano(angulo);
     system("cls"); //Só funciona no Windows
-    if(opc == 7) {
+    if(opc == 10) {
         retornaTudo(angulo);
     }else {
         printf("%s",opcEscolhida(opc, angulo));

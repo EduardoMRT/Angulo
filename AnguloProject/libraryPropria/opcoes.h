@@ -9,13 +9,14 @@
 #include <string.h>
 #include <stdlib.h>
 
+#include "eduardo.h"
 #include "calculos/retornaSeno.h"
 #include "calculos/retornaCosseno.h"
 #include "calculos/retornaTangente.h"
-#include "calculos/calculaRadiano.h"
-#include "calculos/retornaTangente.h"
+#include "../libraryPropria/eduardo.h"
 
-#define NUM_OPCOES 7
+
+#define NUM_OPCOES 10
 
 
     char** opcoes(void) {
@@ -33,8 +34,10 @@
         opc[3] = _strdup("Secante");
         opc[4] = _strdup("Cossecante");
         opc[5] = _strdup("Cotangente");
-        opc[6] = _strdup("Todos\n");
-
+        opc[6] = _strdup("Arco Seno");
+        opc[7] = _strdup("Arco Cosseno");
+        opc[8] = _strdup("Arco Tangente");
+        opc[9] = _strdup("Todos\n");
         return opc;
     }
 
@@ -76,11 +79,15 @@ char* opcEscolhida(int opc, double angulo) {
             sprintf(numStr, " = %.4lf\n", 1/calculaSeno(angulo));
         } else if(opc == 5) {
             sprintf(numStr, " = %.4lf\n", 1/calculaTangente(angulo));
+        } else if(opc == 6) {
+
         }
 
         strcat(retorno, numStr);
         return retorno;
     }
+
+
 
 
 
