@@ -21,7 +21,7 @@ void textoEmLinha(char *texto) {
 }
 
 char* verificaTamanho(double angulo) {
-    if (angulo < 1 || angulo > 1) {
+    if (angulo >= -1 || angulo <= 1) {
         return ("ERRO: O valor deve estar entre 1 e -1");
         exit(1);
     } else {
