@@ -27,9 +27,9 @@ void carregaAngulo(void) {
     printf("\n O angulo esta em \n (1) Radianos \n (2) Graus \n");
     scanf("%d", &radOrGraus);
 
-        angulo = radOrGraus == 1 ? angulo : calculaRadiano(angulo);
+    angulo = radOrGraus == 1 ? angulo : radOrGraus == 2 ? calculaRadiano(angulo) : 0;
 
-    system("cls"); //Só funciona no Windows
+    //system("cls"); //Só funciona no Windows (Tem que retirar se for usar no terminal da IDE)
     if(opc == 10) {
         retornaTudo(angulo);
     }else {
