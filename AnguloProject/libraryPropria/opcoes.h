@@ -80,7 +80,7 @@ char* opcEscolhida(int opc, double angulo) {
         } else if(opc == 5) {
             sprintf(numStr, " = %.4lf\n", 1/calculaTangente(angulo));
         } else if(opc == 6) {
-            printf("Nada");
+            printf("Nada por enquanto");
         }
 
         strcat(retorno, numStr);

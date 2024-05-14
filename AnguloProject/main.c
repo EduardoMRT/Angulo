@@ -35,6 +35,10 @@ void carregaAngulo(void) {
     }else {
         printf("%s",opcEscolhida(opc, angulo));
     }
+    if(opc == 7 || opc == 8 || opc == 9 || opc == 10) {
+        angulo = ArcoSenoCossenoTangente(radOrGraus, angulo);
+        printf("%s",opcEscolhida(opc, angulo));
+    }
 }
 
 int main(void) {
