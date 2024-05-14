@@ -16,9 +16,7 @@
 #include "calculos/calculaRadiano.h"
 #include "../libraryPropria/eduardo.h"
 
-
 #define NUM_OPCOES 10
-
 
     char** opcoes(void) {
         char** opc = malloc(NUM_OPCOES * sizeof(char*));
@@ -62,38 +60,33 @@ char* buscaOpcoesTxt(int opc) {
         free(opcStr);
     }
 
-char* opcEscolhida(int opc, double angulo) {
+char* opcEscolhida(int opc, double angulo, int opcResultado) {
         opc--;
         char* retorno = (char*) calloc(256, sizeof(char)); // Aloca e inicializa a memória
         strcpy(retorno, buscaOpcoesTxt(opc));
         char numStr[50];
 
         if(opc == 0) {
-            sprintf(numStr, " = %.4lf\n", calculaSeno(angulo));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaSeno(angulo) : retornaAngulo(calculaSeno(angulo)));
         } else if(opc == 1) {
-            sprintf(numStr, " = %.4lf\n", calculaCosseno(angulo));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaCosseno(angulo) : retornaAngulo(calculaCosseno(angulo)));
         } else if(opc == 2) {
-            sprintf(numStr, " = %.4lf\n", calculaTangente(angulo));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaTangente(angulo) : retornaAngulo(calculaTangente(angulo)));
         } else if (opc == 3) {
-            sprintf(numStr, " = %.4lf\n", 1/calculaCosseno(angulo));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaCosseno(angulo) : retornaAngulo(1/calculaCosseno(angulo)));
         } else if(opc == 4){
-            sprintf(numStr, " = %.4lf\n", 1/calculaSeno(angulo));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaSeno(angulo) : retornaAngulo(1/calculaSeno(angulo)));
         } else if(opc == 5) {
-            sprintf(numStr, " = %.4lf\n", 1/calculaTangente(angulo));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaTangente(angulo) : retornaAngulo(1/calculaTangente(angulo)));
         } else if(opc == 6) {
-            sprintf(numStr, " em radianos = %.4f\n", asin(angulo));
+            sprintf(numStr, " = %.4f\n", opcResultado == 1 ? asin(angulo) : retornaAngulo(asin(angulo)));
         }else if(opc == 7) {
-            sprintf(numStr, " em radianos = %.4f\n", acos(angulo));
+            sprintf(numStr, " = %.4f\n", opcResultado == 1 ? acos(angulo) : retornaAngulo(acos(angulo)));
         }else if(opc == 8) {
-            sprintf(numStr, " em radianos = %.4f\n", atan(angulo));
+            sprintf(numStr, " = %.4f\n", opcResultado == 1 ? atan(angulo) : retornaAngulo(atan(angulo)));
         }
 
         strcat(retorno, numStr);
         return retorno;
     }
-
-
-
-
-
 #endif //OPCOES_H
