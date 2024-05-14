@@ -21,7 +21,7 @@ void textoEmLinha(char *texto) {
 }
 
 void verificaTamanho(double angulo) {
-    if (angulo >= -1 || angulo <= 1) {
+    if (angulo <= -1 || angulo >= 1) {
         printf("\nERRO: O valor deve estar entre 1 e -1");
         exit(1);
     }
@@ -31,7 +31,6 @@ double ArcoSenoCossenoTangente(int radOrGraus, double angulo) {
     if(radOrGraus == 1) {
         angulo = retornaAngulo(angulo);
     }
-    verificaTamanho(angulo);
     //Angulo apto para calcular os Arcos
     return angulo;
 }
