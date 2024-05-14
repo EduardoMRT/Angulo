@@ -30,19 +30,17 @@ void carregaAngulo(void) {
     angulo = radOrGraus == 1 ? angulo : radOrGraus == 2 ? calculaRadiano(angulo) : 0;
 
     //system("cls"); //Só funciona no Windows (Tem que retirar se for usar no terminal da IDE)
-    if(opc == 10) {
-        retornaTudo(angulo);
-    }else {
-        printf("%s",opcEscolhida(opc, angulo));
-    }
     if(opc == 7 || opc == 8 || opc == 9 || opc == 10) {
-        angulo = ArcoSenoCossenoTangente(radOrGraus, angulo);
         verificaTamanho(angulo);
+        printf("%s", opcEscolhida(opc, angulo));
         if(opc == 10) {
             retornaTudo(angulo);
         }else {
             printf("%s", opcEscolhida(opc, angulo));
         }
+    }
+    else {
+        printf("%s",opcEscolhida(opc, angulo));
     }
 }
 

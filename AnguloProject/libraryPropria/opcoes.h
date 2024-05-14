@@ -13,6 +13,7 @@
 #include "calculos/retornaSeno.h"
 #include "calculos/retornaCosseno.h"
 #include "calculos/retornaTangente.h"
+#include "calculos/calculaRadiano.h"
 #include "../libraryPropria/eduardo.h"
 
 
@@ -80,7 +81,11 @@ char* opcEscolhida(int opc, double angulo) {
         } else if(opc == 5) {
             sprintf(numStr, " = %.4lf\n", 1/calculaTangente(angulo));
         } else if(opc == 6) {
-            printf("Nada por enquanto");
+            sprintf(numStr, " em radianos = %.4f\n", asin(angulo));
+        }else if(opc == 7) {
+            sprintf(numStr, " em radianos = %.4f\n", acos(angulo));
+        }else if(opc == 8) {
+            sprintf(numStr, " em radianos = %.4f\n", atan(angulo));
         }
 
         strcat(retorno, numStr);

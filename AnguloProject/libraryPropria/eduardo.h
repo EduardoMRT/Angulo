@@ -27,13 +27,5 @@ void verificaTamanho(double angulo) {
     }
 }
 
-double ArcoSenoCossenoTangente(int radOrGraus, double angulo) {
-    if(radOrGraus == 1) {
-        angulo = retornaAngulo(angulo);
-    }
-    //Angulo apto para calcular os Arcos
-    return angulo;
-}
-
 
 #endif //EDUARDO_H
