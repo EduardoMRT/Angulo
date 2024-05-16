@@ -6,7 +6,7 @@
 #define RETORNATODOS_H
 #include "../opcoes.h"
 
-void retornaTudo(double angulo, int opcRetorno){
+void retornaTudo(double const angulo, int const opcRetorno){
         printf( "%s", opcEscolhida( 1, angulo, opcRetorno));
         printf( "%s", opcEscolhida(2, angulo, opcRetorno));
         printf( "%s", opcEscolhida(3, angulo, opcRetorno));

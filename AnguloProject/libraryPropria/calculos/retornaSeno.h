@@ -7,8 +7,8 @@
 
 
 #include <math.h>
-    double calculaSeno(double rad){
-        double seno = sin(rad);
+    double calculaSeno(double const rad){
+        double const seno = sin(rad);
         return seno;
     }
 #endif //RETORNASENO_H

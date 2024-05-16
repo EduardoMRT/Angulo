@@ -7,8 +7,8 @@
 
 #define  PI  3.14159265
 
-    double calculaRadiano(double angulo) {
-        double anguloRad = angulo * (PI / 180.0);
+    double calculaRadiano(double const angulo) {
+        double const anguloRad = angulo * (PI / 180.0);
         return anguloRad;
     }
 

@@ -9,7 +9,7 @@
 #include "opcoes.h"
 #include "calculos/retornaTodos.h"
 
-
+/* Responsável por resumir o arquivo principal, possibilitando a escolha das opções por parte do usuário */
 void resumeCarregaAngulo(){
     textoEmLinha("Bem vindo(a) ao Sistema de Angulos");
     textoEmLinha("O que deseja realizar?");
@@ -28,7 +28,7 @@ void resumeCarregaAngulo(){
     scanf("%d",&opcResultado);
     angulo = radOrGraus == 1 ? angulo : radOrGraus == 2 ? calculaRadiano(angulo) : 0;
 
-    system("cls"); //Só funciona no Windows (Tem que retirar se for usar no terminal da IDE)
+    system("cls"); //Só funciona no Windows (Tem que retirar se for usar no terminal da IDE ou Linux)
     if(opc == 7 || opc == 8 || opc == 9 || opc == 10) {
         verificaTamanho(angulo);
         printf("%s", opcEscolhida(opc, angulo, opcResultado));
@@ -43,6 +43,7 @@ void resumeCarregaAngulo(){
     }
 }
 
+//Responsável pela finalização do programa
 void finaliza() {
     textoEmLinha("Obrigado por utilizar o programa!");
     printf("\nPressione ENTER para sair...");

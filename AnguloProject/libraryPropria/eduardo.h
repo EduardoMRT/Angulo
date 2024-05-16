@@ -9,6 +9,7 @@
 #include "calculos/calculaAngulo.h"
 #include "calculos/calculaRadiano.h"
 
+//Gera uma caixa de texto ao redor da palavra
 void textoEmLinha(char *texto) {
     int tamanhoTexto = strlen(texto);
     char *traco = malloc(tamanhoTexto * 2 + 1);
@@ -20,7 +21,8 @@ void textoEmLinha(char *texto) {
     free(traco);
 }
 
-void verificaTamanho(double angulo) {
+//Veriica o tamanho do angulo (Por causa do Arco Seno, Arco Cosseno e Arco Tangente)
+void verificaTamanho(double const angulo) {
     if (angulo <= -1 || angulo >= 1) {
         printf("\nERRO: O valor deve estar entre 1 e -1");
         exit(1);

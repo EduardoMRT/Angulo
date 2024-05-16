@@ -5,8 +5,8 @@
 #ifndef RETORNACOSSENO_H
 #define RETORNACOSSENO_H
 #include <math.h>
-   double calculaCosseno(double rad){
-       double cosseno = cos(rad);
+   double calculaCosseno(double const rad){
+       double const cosseno = cos(rad);
        return cosseno;
    }
 #endif //RETORNACOSSENO_H

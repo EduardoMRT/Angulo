@@ -18,15 +18,13 @@
 
 #define NUM_OPCOES 10
 
-    char** opcoes(void) {
+//Responsável por listar as opções, trabalha com ponteiros
+char** opcoes(void) {
         char** opc = malloc(NUM_OPCOES * sizeof(char*));
         if (opc == NULL) {
             printf("Falha ao alocar memória.\n");
             return NULL;
         }
-        /*TODO: Realizar read.me = A função strdup é uma função da biblioteca padrão C que é usada para duplicar uma string. No entanto, ela foi descontinuada em alguns ambientes devido a possíveis riscos de segurança e não conformidade com os padrões ISO C e C++.
-        A função _strdup é uma alternativa que foi introduzida para ser mais segura e estar em conformidade com os padrões ISO C e C++. Ela funciona de maneira semelhante ao strdup, mas é considerada mais segura e portável. */
-
         opc[0] = _strdup("Seno");
         opc[1] = _strdup("Cosseno");
         opc[2] = _strdup("Tangente");
@@ -40,7 +38,8 @@
         return opc;
     }
 
-char* buscaOpcoesTxt(int opc) {
+//Responsável por buscar as opções passadas o seu número
+char* buscaOpcoesTxt(int const opc) {
         char** opcStr = opcoes();
         char* resultado = strdup(opcStr[opc]);
         for(int i = 0; i < NUM_OPCOES; i++) {
@@ -50,8 +49,8 @@ char* buscaOpcoesTxt(int opc) {
         return resultado;
     }
 
-
-    void listaOpcoes(void) {
+//Responsável por listar as opções
+void listaOpcoes(void) {
         char** opcStr = opcoes();
         for(int i = 0; i < NUM_OPCOES; i++) {
             printf("\n (%i) %s", i+1, opcStr[i]);
@@ -60,7 +59,8 @@ char* buscaOpcoesTxt(int opc) {
         free(opcStr);
     }
 
-char* opcEscolhida(int opc, double angulo, int opcResultado) {
+//Fundamental, é ele quem devolve o resultado das opções escolhidas pelo usuário
+char* opcEscolhida(int opc, double const angulo, int const opcResultado) {
         opc--;
         char* retorno = (char*) calloc(256, sizeof(char)); // Aloca e inicializa a memória
         strcpy(retorno, buscaOpcoesTxt(opc));
