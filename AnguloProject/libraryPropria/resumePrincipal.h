@@ -29,14 +29,16 @@ void resumeCarregaAngulo(){
     angulo = radOrGraus == 1 ? angulo : radOrGraus == 2 ? calculaRadiano(angulo) : 0;
 
     system("cls"); //Só funciona no Windows (Tem que retirar se for usar no terminal da IDE ou Linux)
-    if(opc == 7 || opc == 8 || opc == 9 || opc == 10) {
+    if(opc == 7 || opc == 8 || opc == 9 || opc == 11) {
         verificaTamanho(angulo);
         printf("%s", opcEscolhida(opc, angulo, opcResultado));
         if(opc == 10) {
-            retornaTudo(angulo, opcResultado);
+            retornaTudoComArcos(angulo, opcResultado);
         }else {
             printf("%s", opcEscolhida(opc, angulo, opcResultado));
         }
+    }else if(opc == 11) {
+        retornaTudoSemArcos(angulo, opcResultado);
     }
     else {
     printf("%s",opcEscolhida(opc, angulo, opcResultado));
