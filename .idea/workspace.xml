@@ -9,7 +9,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c76dca9c-cd62-4bf5-8a84-d1bedb0e7554" name="Changes" comment="" />
+    <list default="true" id="c76dca9c-cd62-4bf5-8a84-d1bedb0e7554" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/calculos/retornaTodos.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/calculos/retornaTodos.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/eduardo.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/eduardo.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/resumePrincipal.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/resumePrincipal.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,11 +24,14 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../Angulo\exportToHTML" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/AnguloProject/main.c" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AnguloProject/main.c" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -35,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "C/C++ File.main.c - MinGW.executor": "Run",
+    "C/C++ File.main.c.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
@@ -42,7 +52,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/eteixeira/Documents/GitUnesp/AnguloProjeto/Angulo/AnguloProject",
+    "last_opened_file_path": "C:/Users/eteixeira/Documents/GitUnesp/Angulo/Angulo/AnguloProject/main.c",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -60,9 +70,8 @@
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.c - MinGW" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Angulo" TARGET_NAME="main.c - MinGW" CONFIG_NAME="main.c - MinGW">
-      <option name="sourceFile" value="C:\Users\Eduks\Documents\desenvolvimentos\Angulo\AnguloProject\main.c" />
-      <option name="toolchainName" value="MinGW" />
+    <configuration name="main.c" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Angulo" TARGET_NAME="main.c" CONFIG_NAME="main.c">
+      <option name="sourceFile" value="C:\Users\eteixeira\Documents\GitUnesp\Angulo\Angulo\AnguloProject\main.c" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -82,26 +91,11 @@
       <workItem from="1715022300474" duration="1992000" />
       <workItem from="1715034207469" duration="2639000" />
       <workItem from="1715710288633" duration="37000" />
+      <workItem from="1715881573581" duration="1778000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/AnguloProject/libraryPropria/opcoes.h</url>
-          <line>70</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/AnguloProject/main.c</url>
-          <line>29</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

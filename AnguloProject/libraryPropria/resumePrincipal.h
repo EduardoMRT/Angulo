@@ -32,12 +32,12 @@ void resumeCarregaAngulo(){
     if(opc == 7 || opc == 8 || opc == 9 || opc == 11) {
         verificaTamanho(angulo);
         printf("%s", opcEscolhida(opc, angulo, opcResultado));
-        if(opc == 10) {
+        if(opc == 11) {
             retornaTudoComArcos(angulo, opcResultado);
         }else {
             printf("%s", opcEscolhida(opc, angulo, opcResultado));
         }
-    }else if(opc == 11) {
+    }else if(opc == 10) {
         retornaTudoSemArcos(angulo, opcResultado);
     }
     else {

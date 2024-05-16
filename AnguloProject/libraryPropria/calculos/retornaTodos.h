@@ -15,7 +15,7 @@ void retornaTudoSemArcos(double const angulo, int const opcRetorno){
         printf( "%s", opcEscolhida(6, angulo, opcRetorno));
 }
 
-void retornaTudoComArcos(double const angulo, int const opcRetorno) {
+void retornaTudoComArcos(double angulo, int opcRetorno) {
         printf( "%s", opcEscolhida( 1, angulo, opcRetorno));
         printf( "%s", opcEscolhida(2, angulo, opcRetorno));
         printf( "%s", opcEscolhida(3, angulo, opcRetorno));

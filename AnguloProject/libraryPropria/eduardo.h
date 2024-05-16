@@ -6,6 +6,9 @@
 #define EDUARDO_H
 #include<string.h>
 #include<stdlib.h>
+
+
+#include "resumePrincipal.h"
 #include "calculos/calculaAngulo.h"
 #include "calculos/calculaRadiano.h"
 
@@ -25,7 +28,9 @@ void textoEmLinha(char *texto) {
 void verificaTamanho(double const angulo) {
     if (angulo <= -1 || angulo >= 1) {
         printf("\nERRO: O valor deve estar entre 1 e -1");
-        exit(1);
+        getchar();
+        getchar();
+        resumeCarregaAngulo();
     }
 }
 
