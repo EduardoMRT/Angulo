@@ -30,7 +30,7 @@ void verificaTamanho(double const angulo) {
         printf("\nERRO: O valor deve estar entre 1 e -1");
         getchar();
         getchar();
-        resumeCarregaAngulo();
+        exit(1);
     }
 }
 
