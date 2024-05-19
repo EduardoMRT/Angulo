@@ -1,4 +1,4 @@
-$folderPath = 'C:\Users\Eduks\Documents\desenvolvimentos\Angulo\AnguloProject' # Substitua pelo caminho da sua pasta
+$folderPath = '..\..\AnguloProject' # Substitua pelo caminho da sua pasta
 $wordToUncomment = '//system("cls")'
 
 Get-ChildItem $folderPath -Include *.c, *.h -Recurse | ForEach-Object {

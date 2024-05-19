@@ -18,7 +18,7 @@ int main(void) {
         carregaAngulo();
         printf("\n Deseja reiniciar o programa?\n (1) Sim \n (2) Nao \n");
         scanf_s("%d", &opc);
-        system("cls"); //Só funciona no Windows Comentar caso uso no terminal IDE ou Linux
+        //system("cls"); //Só funciona no Windows Comentar caso uso no terminal IDE ou Linux
     }while(opc == 1);
     finaliza();
     return 0;

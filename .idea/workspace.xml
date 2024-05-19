@@ -10,15 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c76dca9c-cd62-4bf5-8a84-d1bedb0e7554" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AnguloProject/WindowsLinux/linux.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnguloProject/WindowsLinux/linux.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnguloProject/WindowsLinux/windows.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AnguloProject/WindowsLinux/windows.ps1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Angulo.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnguloProject/libraryPropria/resumePrincipal.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/libraryPropria/resumePrincipal.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnguloProject/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnguloProject/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.exe" beforeDir="false" afterPath="$PROJECT_DIR$/main.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -28,7 +28,7 @@ void resumeCarregaAngulo(){
     scanf("%d",&opcResultado);
     angulo = radOrGraus == 1 ? angulo : radOrGraus == 2 ? calculaRadiano(angulo) : 0;
 
-    system("cls"); //Só funciona no Windows (Tem que retirar se for usar no terminal da IDE ou Linux)
+    //system("cls"); //Só funciona no Windows (Tem que retirar se for usar no terminal da IDE ou Linux)
     if(opc == 7 || opc == 8 || opc == 9 || opc == 11) {
         verificaTamanho(angulo);
         if(opc == 11) {
