@@ -30,7 +30,7 @@ void resumeCarregaAngulo(){
 
     //system("cls"); //Só funciona no Windows (Tem que retirar se for usar no terminal da IDE ou Linux)
     if(opc == 7 || opc == 8 || opc == 9 || opc == 11) {
-        verificaTamanho(angulo);
+        verificaTamanho(angulo, opc);
         if(opc == 11) {
             retornaTudoComArcos(angulo, opcResultado);
         }else {

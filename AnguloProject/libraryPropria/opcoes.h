@@ -19,25 +19,25 @@
 #define NUM_OPCOES 11
 
 //Responsável por listar as opções, trabalha com ponteiros
-char** opcoes(void) {
-        char** opc = malloc(NUM_OPCOES * sizeof(char*));
-        if (opc == NULL) {
-            printf("Falha ao alocar memória.\n");
-            return NULL;
-        }
-        opc[0] = _strdup("Seno");
-        opc[1] = _strdup("Cosseno");
-        opc[2] = _strdup("Tangente");
-        opc[3] = _strdup("Secante");
-        opc[4] = _strdup("Cossecante");
-        opc[5] = _strdup("Cotangente");
-        opc[6] = _strdup("Arco Seno");
-        opc[7] = _strdup("Arco Cosseno");
-        opc[8] = _strdup("Arco Tangente");
-        opc[9] = _strdup("Todos (Sem os Arcos)");
-        opc[10] = _strdup("Todos (Com os Arcos)\n");
-        return opc;
+char **opcoes(void) {
+    char **opc = malloc(NUM_OPCOES * sizeof(char *));
+    if (opc == NULL) {
+        printf("Falha ao alocar memória.\n");
+        return NULL;
     }
+    opc[0] = _strdup("Seno");
+    opc[1] = _strdup("Cosseno");
+    opc[2] = _strdup("Tangente");
+    opc[3] = _strdup("Secante");
+    opc[4] = _strdup("Cossecante");
+    opc[5] = _strdup("Cotangente");
+    opc[6] = _strdup("Arco Seno");
+    opc[7] = _strdup("Arco Cosseno");
+    opc[8] = _strdup("Arco Tangente");
+    opc[9] = _strdup("Todos (Sem os Arcos)");
+    opc[10] = _strdup("Todos (Com os Arcos)\n");
+    return opc;
+}
 
 //Responsável por buscar as opções passadas o seu número
 char* buscaOpcoesTxt(int const opc) {
