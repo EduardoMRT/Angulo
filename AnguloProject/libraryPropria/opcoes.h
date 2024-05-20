@@ -66,25 +66,25 @@ char* opcEscolhida(int opc, double const angulo, int const opcResultado) {
         char* retorno = (char*) calloc(256, sizeof(char)); // Aloca e inicializa a memória
         strcpy(retorno, buscaOpcoesTxt(opc));
         char numStr[50];
-
+        double anguloEmGraus = retornaAngulo(angulo);
         if(opc == 0) {
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaSeno(angulo) : retornaAngulo(calculaSeno(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaSeno(angulo) : calculaSeno(anguloEmGraus));
         } else if(opc == 1) {
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaCosseno(angulo) : retornaAngulo(calculaCosseno(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaCosseno(angulo) : calculaCosseno(anguloEmGraus));
         } else if(opc == 2) {
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaTangente(angulo) : retornaAngulo(calculaTangente(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? calculaTangente(angulo) : calculaTangente(anguloEmGraus));
         } else if (opc == 3) {
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaCosseno(angulo) : retornaAngulo(1/calculaCosseno(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaCosseno(angulo) : 1/calculaCosseno(anguloEmGraus));
         } else if(opc == 4){
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaSeno(angulo) : retornaAngulo(1/calculaSeno(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaSeno(angulo) : 1/calculaSeno(anguloEmGraus));
         } else if(opc == 5) {
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaTangente(angulo) : retornaAngulo(1/calculaTangente(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? 1/calculaTangente(angulo) : tan(PI / 2 - retornaAngulo(angulo)));
         } else if(opc == 6) {
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? asin(angulo) : retornaAngulo(asin(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? asin(sin(angulo)) : asin(sin(anguloEmGraus)));
         }else if(opc == 7) {
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? acos(angulo) : retornaAngulo(acos(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? acos(cos(angulo)) : acos(cos(anguloEmGraus)));
         }else if(opc == 8) {
-            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? atan(angulo) : retornaAngulo(atan(angulo)));
+            sprintf(numStr, " = %.4lf\n", opcResultado == 1 ? atan(tan(angulo)) : atan(tan(anguloEmGraus)));
         }
 
         strcat(retorno, numStr);

@@ -26,7 +26,7 @@ void textoEmLinha(char *texto) {
 }
 
 //Veriica o tamanho do angulo (Por causa do Arco Seno, Arco Cosseno e Arco Tangente)
-void verificaTamanho(double const angulo, int const opc) {
+/*void verificaTamanho(double const angulo, int const opc) {
 
     //Verifica ArcoSeno, ArcoCosseno e ArcoTangente
     if((opc == 7 && (sin(angulo) <= -1 || sin(angulo) >= 1)) || (opc == 8 && (cos(angulo) <= -1 || cos(angulo) >= 1)) || opc == 9 && (tan(angulo) <= -1 || tan(angulo) >= 1)) {
@@ -35,7 +35,27 @@ void verificaTamanho(double const angulo, int const opc) {
         getchar();
         exit(1);
     }
+}*/
+
+int verificaTamanhoSeno(double angulo) {
+    if(sin(angulo) <= 1 && sin(angulo) >= -1){
+        return 1;
+    }
+    return 0;
 }
 
+int verificaTamanhoCosseno(double angulo) {
+    if(cos(angulo) <= 1 && cos(angulo) >= -1){
+        return 1;
+    }
+        return 0;
+}
+
+int verificaTamanhoTangente(double angulo) {
+    if(tan(angulo) <= 1 && tan(angulo) >= -1){
+        return 1;
+    }
+    return 0;
+}
 
 #endif //EDUARDO_H
