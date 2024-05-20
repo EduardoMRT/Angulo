@@ -22,9 +22,9 @@ void retornaTudoComArcos(double angulo, int opcRetorno) {
         printf( "%s", opcEscolhida(4, angulo, opcRetorno));
         printf( "%s", opcEscolhida(5, angulo, opcRetorno));
         printf( "%s", opcEscolhida(6, angulo, opcRetorno));
-        printf( "%s", opcEscolhida(7, angulo, opcRetorno));
-        printf( "%s", opcEscolhida(8, angulo, opcRetorno));
-        printf( "%s", opcEscolhida(9, angulo, opcRetorno));
+        printf( "%s", verificaTamanhoSeno(angulo) == 0 ? "Arco Seno = Erro, o valor do seno deve estar entre 1 e -1 \n" : opcEscolhida(7, angulo, opcRetorno));
+        printf( "%s", verificaTamanhoCosseno(angulo) == 0 ? "Arco Cosseno = Erro, o valor do cosseno deve estar entre 1 e -1 \n" : opcEscolhida(8, angulo, opcRetorno));
+        printf( "%s", verificaTamanhoTangente(angulo) == 0 ? "Arco Tangente = Erro, o valor da tangente deve estar entre -1 e 1 \n" : opcEscolhida(9, angulo, opcRetorno));
 }
 
 #endif //RETORNATODOS_H

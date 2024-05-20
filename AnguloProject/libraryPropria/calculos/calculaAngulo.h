@@ -8,7 +8,7 @@
 #define  PI  3.14159265
 
     double retornaAngulo(double const radianos){
-        double const angulo = radianos * 180 / PI;
+        double const angulo = radianos * (180 / PI);
         return angulo;
     }
 
